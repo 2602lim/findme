@@ -20,3 +20,8 @@
 2. 在命令行中运行`findme`命令,可查看帮助信息并了解各参数含义
 3. 根据需求设置搜索参数,例如:
 findme -path C:\Projects -keyword api_key,secret -type code
+
+## 编译
+go build -ldflags="-s -w" -o findmev2.exe .\findmev2.go 
+## 压缩
+upx -9 findmev2.exe
